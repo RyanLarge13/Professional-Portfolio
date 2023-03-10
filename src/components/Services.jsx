@@ -23,15 +23,16 @@ const Services = () => {
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, transition: { delay: 0.25 } }}
-        className="text-sm my-5"
+        className="text-sm my-5 md:text-xl md:w-[50%]"
       >
         Are you looking for a professional designer & software programmer with
         the capabilities of created full fledged, full stack, fully responsive
         cross platform applications?? Here are the services I provide
       </motion.p>
       <div>
-        {services.map((service) => (
+        {services.map((service, index) => (
           <motion.div
+            key={index}
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             className="p-5 bg-gray-700 rounded-md shadow-md my-3"

@@ -17,18 +17,14 @@ const TimeLine = () => {
         whileInView={{ opacity: 1, x: 0 }}
         className="text-2xl"
       >
-        <strong className={`${elements.strongGradient}`}>
-          Explore
-        </strong>{" "}
-        My Diverse History Via{" "}
-        <strong className={`${elements.strongGradient}`}>
-          Timeline
-        </strong>
+        <strong className={`${elements.strongGradient}`}>Explore</strong> My
+        Diverse History Via{" "}
+        <strong className={`${elements.strongGradient}`}>Timeline</strong>
       </motion.h2>
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, transition: { delay: 0.25 } }}
-        className="text-sm my-5"
+        className="text-sm my-5 md:text-xl md:w-[50%]"
       >
         You may be satisfied by hiring a developer with no experience, or it
         might be required for you to hire a developer with tons of experience.
@@ -36,7 +32,7 @@ const TimeLine = () => {
       </motion.p>
       <VerticalTimeline>
         <VerticalTimelineElement
-          date={<p className="text-black">2022 - present</p>}
+          date={<p className="text-black md:text-white">2022 - present</p>}
           icon={
             <MdWorkHistory className="text-blue-500 bg-gray-700 rounded-full" />
           }
@@ -72,7 +68,7 @@ const TimeLine = () => {
           </motion.div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          date={<p className="text-black">2022 - present</p>}
+          date={<p className="text-black md:text-white">2022 - present</p>}
           icon={
             <MdWorkHistory className="text-blue-500 bg-gray-700 rounded-full" />
           }
@@ -105,7 +101,7 @@ const TimeLine = () => {
           </motion.div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          date={<p className="text-black">2022 - present</p>}
+          date={<p className="text-black md:text-white">2022 - present</p>}
           icon={
             <MdWorkHistory className="text-blue-500 bg-gray-700 rounded-full" />
           }
@@ -140,7 +136,7 @@ const TimeLine = () => {
           </motion.div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          date={<p className="text-black">2022 - 2022</p>}
+          date={<p className="text-black md:text-white">2022 - 2022</p>}
           icon={
             <MdWorkHistory className="text-blue-500 bg-gray-700 rounded-full" />
           }
@@ -173,7 +169,7 @@ const TimeLine = () => {
           </motion.div>
         </VerticalTimelineElement>
         <VerticalTimelineElement
-          date={<p className="text-black">2016 - 2022</p>}
+          date={<p className="text-black md:text-white">2016 - 2022</p>}
           icon={
             <MdWorkHistory className="text-blue-500 bg-gray-700 rounded-full" />
           }
@@ -212,7 +208,7 @@ const TimeLine = () => {
         </VerticalTimelineElement>
       </VerticalTimeline>
       <a href="../assets/ryanLargeResume.pdf" download>
-        <div className="p-2 mt-5 rounded-md mt-2 bg-gradient-to-r from-blue-500 to-violet-500 text-center">
+        <div className="p-2 mt-5 rounded-md bg-gradient-to-r from-blue-500 to-violet-500 text-center md:w-[50%] md:mx-auto">
           <p>Download My Full Professional Resume</p>
           <AiOutlineCloudDownload className="text-3xl inline ml-3" />
         </div>

@@ -15,7 +15,7 @@ const Hero = () => {
           whileInView={{
             opacity: 1,
           }}
-          className="uppercase text-2xl mb-2"
+          className="uppercase text-2xl mb-2 md:text-4xl md:w-[40%]"
         >
           Professional Fullstack Website & Mobile Application{" "}
           <strong className={`${elements.strongGradient}`}>Developer</strong>

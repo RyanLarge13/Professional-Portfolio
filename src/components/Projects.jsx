@@ -17,14 +17,12 @@ const Projects = () => {
           className="text-2xl"
         >
           Check Out These Amazing{" "}
-          <strong className={`${elements.strongGradient}`}>
-            Projects!
-          </strong>
+          <strong className={`${elements.strongGradient}`}>Projects!</strong>
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, transition: { delay: 0.25 } }}
-          className="text-sm mt-3"
+          className="text-sm mt-3 md:text-xl md:w-[50%]"
         >
           From mobile apps to websites & using technologies such as React,
           Sanity, MongoDB, React Native, Vanilla JS and more! I have built a
@@ -32,16 +30,19 @@ const Projects = () => {
           something new, fun & beneficial
         </motion.p>
       </div>
-      <div className="flex flex-wrap justify-center items-center">
-        {projects.map((project) => (
-          <Tilt>
+      <div className="overflow-hidden">
+        {projects.map((project, index) => (
+          <Tilt
+            key={index}
+            className="w-full flex flex-col justify-center items-center"
+          >
             <motion.div
               initial={{ scale: 0.75 }}
               whileInView={{
                 scale: 1,
                 transition: { type: "spring", stiffness: 400 },
               }}
-              className="p-5 my-5 bg-gradient-to-r from-indigo-400 to-blue-500 rounded-md relative"
+              className="p-5 my-5 bg-gradient-to-r from-indigo-400 to-blue-500 rounded-md relative md:min-w-[40%] md:max-w-[40%]"
             >
               <motion.a
                 whileHover={{ scale: 1.1 }}
@@ -55,7 +56,7 @@ const Projects = () => {
               <img
                 src={project.img}
                 alt="project"
-                className="w-full rounded-md shadow-lg h-[200px] object-top object-cover object-center"
+                className="w-full rounded-md shadow-lg h-[200px] object-cover object-center"
               />
               <div className="flex justify-start items-center py-2 my-5 w-full text-2xl">
                 <a href={project.code} className="mr-5">
@@ -69,8 +70,10 @@ const Projects = () => {
                 <p className="text-xs">{project.excerpt}</p>
               </div>
               <div className="flex flex-wrap p-2 my-3 bg-gray-700 rounded-md">
-                {project.technologies.map((tech) => (
-                  <p className={`${tech?.color} text-xs mx-2`}>{tech?.name}</p>
+                {project.technologies.map((tech, index) => (
+                  <p key={index} className={`${tech?.color} text-xs mx-2`}>
+                    {tech?.name}
+                  </p>
                 ))}
               </div>
             </motion.div>

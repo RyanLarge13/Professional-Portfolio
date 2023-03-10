@@ -43,7 +43,7 @@ const Contact = () => {
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1, transition: { delay: 0.25 } }}
-        className="text-sm my-5"
+        className="text-sm my-5 md:text-xl md:w-[50%]"
       >
         By filling out the form below, I will immediately receive your message
         and promptly reply weather we are starting a new service or you are
@@ -53,7 +53,7 @@ const Contact = () => {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="flex flex-col items-start justify-center p-3 my-10 rounded-md bg-gradient-to-tr from-violet-500 to-blue-500"
+        className="flex flex-col items-start justify-center p-3 my-10 rounded-md bg-gradient-to-tr from-violet-500 to-blue-500 md:w-[50%]"
       >
         <label className="hidden">Name</label>
         <input
@@ -82,7 +82,10 @@ const Contact = () => {
           className="px-4 py-2 rounded-md bg-gradient-to-tr from-red-500 to-red-400 my-3"
         />
       </form>
-      <div onClick={() => window.scrollTo(0, 0)} className="mx-auto w-min my-5">
+      <div
+        onClick={() => window.scrollTo(0, 0)}
+        className="mx-auto w-min my-5 md:mx-5"
+      >
         <BsFillArrowUpSquareFill className="text-blue-500 text-4xl" />
       </div>
     </section>

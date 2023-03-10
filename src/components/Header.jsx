@@ -1,7 +1,7 @@
 import { useState } from "react";
 import logo from "../assets/logoWhite.png";
 import { CgMenuRight } from "react-icons/cg";
-import {components} from "../styles/styles.js"
+import { components } from "../styles/styles.js";
 import Nav from "./Nav";
 
 const Header = () => {
@@ -22,7 +22,7 @@ const Header = () => {
         />
         <CgMenuRight
           onClick={() => setNav((prev) => !prev)}
-          className="text-2xl"
+          className="text-2xl cursor-pointer"
         />
       </header>
     </>
