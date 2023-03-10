@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: Georgia, Sans-Serif;
+  font-weight: 600;
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding: 100px;
+}
+
+body {
+ background-color: #222;
+}
