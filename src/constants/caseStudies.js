@@ -1,5 +1,6 @@
 import WBReact from "../assets/WB-React.jpg";
 import WAReact from "../assets/WA-React.jpg";
+import Calendar from "../assets/Calendar.jpg";
 
 export default [
   {
@@ -46,6 +47,33 @@ export default [
         name: "Tailwind",
         color: "text-blue-400",
       },
+    ],
+  },
+  {
+    title: "Calendar Next Gen",
+    img: Calendar,
+    website: "https://github.com/RyanLarge13/Calendar-Next-Gen/",
+    code: "https://github.com/RyanLarge13/Calendar-Next-Gen/",
+    forkCode: "https://github.com/RyanLarge13/Calendar-Next-Gen/fork",
+    excerpt:
+      "Calendars are used in every area of life daily!! This application was built for the organized, the manager, the entrepreneur & the guy sitting next you trying to manage his busy life. Bring on the tasks!!",
+    technologies: [
+      {
+        name: "React",
+        color: "text-blue-400",
+      },
+      {
+        name: "new Date() API",
+        color: "text-green-300",
+      },
+      {
+      	name: "PostgreSQL", 
+      	color: "text-blue-300"
+      }, 
+      {
+      	name: "Tailwind", 
+      	color: "text-blue-400"
+      }
     ],
   },
 ];

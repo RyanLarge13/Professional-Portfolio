@@ -1,5 +1,4 @@
 export default [
-  { title: "Home", href: "#home" },
   { title: "Services", href: "#services" },
   { title: "Projects", href: "#projects" },
   { title: "Tech Stack", href: "#tech" },

@@ -79,7 +79,7 @@ const Contact = () => {
           whileTap={{ scale: 0.4 }}
           type="submit"
           value="Send"
-          className="px-4 py-2 rounded-md bg-gradient-to-tr from-red-500 to-red-400 my-3"
+          className="px-4 py-2 rounded-md bg-gradient-to-tr from-green-300 to-green-200 my-3 text-black"
         />
       </form>
       <div
