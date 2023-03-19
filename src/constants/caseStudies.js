@@ -1,6 +1,7 @@
 import WBReact from "../assets/WB-React.jpg";
 import WAReact from "../assets/WA-React.jpg";
 import Calendar from "../assets/Calendar.jpg";
+import SoapWorks from "../assets/soapWorks.jpg";
 
 export default [
   {
@@ -18,7 +19,7 @@ export default [
       },
       {
         name: "SCSS",
-        color: "text-red-500",
+        color: "text-pink-300",
       },
       {
         name: "Axios",
@@ -67,13 +68,40 @@ export default [
         color: "text-green-300",
       },
       {
-      	name: "PostgreSQL", 
-      	color: "text-blue-300"
-      }, 
+        name: "PostgreSQL",
+        color: "text-blue-300",
+      },
       {
-      	name: "Tailwind", 
-      	color: "text-blue-400"
-      }
+        name: "Tailwind",
+        color: "text-blue-400",
+      },
+    ],
+  },
+  {
+    title: "Soap Works",
+    img: SoapWorks,
+    website: "https://soap-works-production.up.railway.app/",
+    code: "https://github.com/RyanLarge13/Soap-Works/",
+    forkCode: "https://github.com/RyanLarge13/Soap-Works/fork",
+    excerpt:
+      "Home made, all natural soap. A business which was in need of a website to sell exactly that reached out to me for help. This is a fullstack, fully functional Ecommerce website built to serve both the people and a small business in the making",
+    technologies: [
+      {
+        name: "EJS",
+        color: "text-red-400",
+      },
+      {
+        name: "SCSS",
+        color: "text-pink-300",
+      },
+      {
+        name: "Express",
+        color: "text-black",
+      },
+      {
+        name: "MongoDB",
+        color: "text-green-300",
+      },
     ],
   },
 ];
