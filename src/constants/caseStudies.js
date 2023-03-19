@@ -96,7 +96,7 @@ export default [
       },
       {
         name: "Express",
-        color: "text-black",
+        color: "text-white",
       },
       {
         name: "MongoDB",
