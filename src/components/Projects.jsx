@@ -30,7 +30,7 @@ const Projects = () => {
           something new, fun & beneficial
         </motion.p>
       </div>
-      <div className="overflow-hidden">
+      <div className="overflow-hidden md:grid md:grid-cols-2 md:gap-20 md:p-10">
         {projects.map((project, index) => (
           <Tilt
             key={index}
@@ -42,7 +42,7 @@ const Projects = () => {
                 scale: 1,
                 transition: { type: "spring", stiffness: 400 },
               }}
-              className="p-5 my-5 bg-gradient-to-r from-indigo-400 to-blue-500 rounded-md relative md:min-w-[40%] md:max-w-[40%]"
+              className="p-5 my-5 bg-gradient-to-r from-indigo-400 to-blue-500 rounded-md relative"
             >
               <motion.a
                 whileHover={{ scale: 1.1 }}

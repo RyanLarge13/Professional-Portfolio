@@ -19,7 +19,12 @@ const Nav = ({ open, setOpen }) => {
       <ul onClick={() => setOpen(false)} className="text-center">
         {navLinks.map((link, index) => (
           <li key={index} className="my-10">
-            <a href={link.href} className="text-xl bold">{link.title}</a>
+            <a
+              href={link.href}
+              className="text-xl bold hover:text-red-400 duration-200"
+            >
+              {link.title}
+            </a>
           </li>
         ))}
       </ul>

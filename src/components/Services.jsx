@@ -29,7 +29,7 @@ const Services = () => {
         the capabilities of creating full fledged, full stack, fully responsive
         cross platform applications?? Here are the services I provide
       </motion.p>
-      <div>
+      <div className="md:grid md:grid-cols-2 md:gap-x-5">
         {services.map((service, index) => (
           <motion.div
             key={index}

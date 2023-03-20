@@ -23,13 +23,13 @@ const Testimonials = () => {
         From coworkers to friendly & professional acquaintances, here is a
         glimps into what it is like to work with me
       </motion.p>
-      <div>
+      <div className="md:grid md:grid-cols-2 md: gap-10">
         {testimonials.map((item, index) => (
           <motion.div
             initial={{ y: 100, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             key={index}
-            className="rounded-md bg-gradient-to-tr from-violet-500 to-blue-500 p-2 my-5 md:w-[75%]"
+            className="rounded-md bg-gradient-to-tr from-violet-500 to-blue-500 p-2 my-5 md:my-0"
           >
             <p className="text-sm text-gray-200">{item.name}</p>
             <p className="text-lg mt-1 mb-5 mr-5">{item.occupation}</p>

@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import { animations } from "../styles/variants.js";
 import { elements } from "../styles/styles.js";
-import { BsFillArrowUpRightSquareFill, BsFacebook } from "react-icons/bs";
-import { AiFillTwitterCircle, AiFillGithub } from "react-icons/ai";
+import { BsFillArrowUpRightSquareFill } from "react-icons/bs";
 import Dev from "../assets/dev.jpg";
+import Tilt from "react-parallax-tilt";
+import socialLinks from "../constants/socialLinks.js";
 
 const Hero = () => {
   return (
@@ -33,7 +34,18 @@ const Hero = () => {
           animate="show"
           className="flex justify-start items-center text-xl text-blue-500 my-5"
         >
-          <motion.div
+          {socialLinks.map((link, index) => (
+            <motion.div
+              key={index}
+              variants={animations.socialIcons}
+              className={`${elements.socialLink}`}
+            >
+              <a href={link.href} target="_blank" rel="noreferrer">
+                {<link.icon />}
+              </a>
+            </motion.div>
+          ))}
+          {/* <motion.div
             variants={animations.socialIcons}
             className={`${elements.socialLink}`}
           >
@@ -68,16 +80,18 @@ const Hero = () => {
             >
               <AiFillGithub />
             </a>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
-      <motion.img
-        initial={{ y: 200, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1, transition: { delay: 0.5 } }}
-        src={Dev}
-        alt="dev"
-        className="rounded-md shadow-md my-20"
-      />
+      <Tilt>
+        <motion.img
+          initial={{ y: 200, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1, transition: { delay: 0.5 } }}
+          src={Dev}
+          alt="dev"
+          className="rounded-md shadow-md my-20"
+        />
+      </Tilt>
     </section>
   );
 };

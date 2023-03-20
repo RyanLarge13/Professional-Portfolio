@@ -2,6 +2,7 @@ import { useState } from "react";
 import logo from "../assets/logoWhite.png";
 import { CgMenuRight } from "react-icons/cg";
 import { components } from "../styles/styles.js";
+import { motion } from "framer-motion";
 import Nav from "./Nav";
 
 const Header = () => {
@@ -11,18 +12,20 @@ const Header = () => {
     <>
       <Nav open={nav} setOpen={setNav} />
       <header className={`${components.header}`}>
-        <img
+        <motion.img
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           onClick={() => {
             setNav(false);
             window.scrollTo(0, 0);
           }}
           src={logo}
           alt="logo"
-          className="w-[25px] h-[25px]"
+          className="w-[25px] h-[25px] cursor-pointer"
         />
         <CgMenuRight
           onClick={() => setNav((prev) => !prev)}
-          className="text-2xl cursor-pointer"
+          className="text-2xl cursor-pointer hover:text-red-400 duration-200"
         />
       </header>
     </>

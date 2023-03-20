@@ -53,7 +53,7 @@ const Contact = () => {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="flex flex-col items-start justify-center p-3 my-10 rounded-md bg-gradient-to-tr from-violet-500 to-blue-500 md:w-[50%]"
+        className="flex flex-col items-start justify-center p-3 my-10 rounded-md bg-gradient-to-tr from-violet-500 to-blue-500 md:w-[75%] md:mx-auto"
       >
         <label className="hidden">Name</label>
         <input
@@ -79,12 +79,12 @@ const Contact = () => {
           whileTap={{ scale: 0.4 }}
           type="submit"
           value="Send"
-          className="px-4 py-2 rounded-md bg-gradient-to-tr from-green-300 to-green-200 my-3 text-black"
+          className="px-4 py-2 rounded-md bg-gradient-to-tr from-green-300 to-green-200 my-3 text-black cursor-pointer"
         />
       </form>
       <div
         onClick={() => window.scrollTo(0, 0)}
-        className="mx-auto w-min my-5 md:mx-5"
+        className="mx-auto w-min my-5 cursor-pointer"
       >
         <BsFillArrowUpSquareFill className="text-blue-500 text-4xl" />
       </div>
