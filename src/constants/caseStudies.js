@@ -2,6 +2,7 @@ import WBReact from "../assets/WB-React.jpg";
 import WAReact from "../assets/WA-React.jpg";
 import Calendar from "../assets/Calendar.jpg";
 import SoapWorks from "../assets/soapWorks.jpg";
+import MyLists from "../assets/My-Lists.jpg";
 
 export default [
   {
@@ -101,6 +102,29 @@ export default [
       {
         name: "MongoDB",
         color: "text-green-300",
+      },
+    ],
+  },
+  {
+    title: "My Lists",
+    img: MyLists,
+    website: "https://expo.dev/artifacts/eas/tQw6FUxboYj9gboSptKp7f.apk",
+    code: "https://github.com/RyanLarge13/My-Lists-Android/",
+    forkCode: "https://github.com/RyanLarge13/My-Lists-Android/fork",
+    excerpt:
+      "React Native & MongoDB join together again for an amazing task management application! Make a lists of lists, customize them, sync your data offline and online and stay organized!! The top right arrow will download the apk test version of the mobile app.",
+    technologies: [
+      {
+        name: "React Native",
+        color: "text-blue-300",
+      },
+      {
+        name: "MongoDB",
+        color: "text-green-300",
+      },
+      {
+        name: "Expo",
+        color: "text-white",
       },
     ],
   },
