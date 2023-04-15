@@ -54,7 +54,7 @@ export default [
   {
     title: "Calendar Next Gen",
     img: Calendar,
-    website: "https://github.com/RyanLarge13/Calendar-Next-Gen/",
+    website: "https://calendar-next-gen.vercel.app/",
     code: "https://github.com/RyanLarge13/Calendar-Next-Gen/",
     forkCode: "https://github.com/RyanLarge13/Calendar-Next-Gen/fork",
     excerpt:
