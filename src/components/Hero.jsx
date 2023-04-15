@@ -37,6 +37,7 @@ const Hero = () => {
           {socialLinks.map((link, index) => (
             <motion.div
               key={index}
+              whileHover={{ scale: 1.05 }}
               variants={animations.socialIcons}
               className={`${elements.socialLink}`}
             >
@@ -45,45 +46,13 @@ const Hero = () => {
               </a>
             </motion.div>
           ))}
-          {/* <motion.div
-            variants={animations.socialIcons}
-            className={`${elements.socialLink}`}
-          >
-            <a
-              href="https://m.facebook.com/ryan.large.984?eav=AfZGHI_LbLygPGY_uKdIQsmUnKdo38V1UhHHCcvj1yA71B2ryRPAIX6E03_ikKG0lbU&paipv=0"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <BsFacebook />
-            </a>
-          </motion.div>
-          <motion.div
-            variants={animations.socialIcons}
-            className={`${elements.socialLink}`}
-          >
-            <a
-              href="https://twitter.com/ryan_large13"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <AiFillTwitterCircle />
-            </a>
-          </motion.div>
-          <motion.div
-            variants={animations.socialIcons}
-            className={`${elements.socialLink}`}
-          >
-            <a
-              href="https://github.com/RyanLarge13/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <AiFillGithub />
-            </a>
-          </motion.div> */}
         </motion.div>
       </div>
-      <Tilt>
+      <Tilt
+        tiltMaxAngleX={7}
+        tiltMaxAngleY={7}
+        className="lg:w-[50%] lg:mx-auto"
+      >
         <motion.img
           initial={{ y: 200, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1, transition: { delay: 0.5 } }}

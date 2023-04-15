@@ -34,6 +34,8 @@ const Projects = () => {
         {projects.map((project, index) => (
           <Tilt
             key={index}
+            tiltMaxAngleX={7}
+            tiltMaxAngleY={7}
             className="w-full flex flex-col justify-center items-center"
           >
             <motion.div
@@ -52,11 +54,11 @@ const Projects = () => {
               >
                 <BsBoxArrowInUpRight className="absolute top-2 right-2 text-xl" />
               </motion.a>
-              <p className="text-2xl my-3">{project.title}</p>
+              <p className="text-2xl my-3 lg:text-3xl">{project.title}</p>
               <img
                 src={project.img}
                 alt="project"
-                className="w-full rounded-md shadow-lg h-[200px] object-cover object-center"
+                className="w-full rounded-md shadow-lg h-[200px] object-cover object-center md:h-[300px] lg:h-[400px]"
               />
               <div className="flex justify-start items-center py-2 my-5 w-full text-2xl">
                 <a href={project.code} className="mr-5">
@@ -67,11 +69,16 @@ const Projects = () => {
                 </a>
               </div>
               <div>
-                <p className="text-xs">{project.excerpt}</p>
+                <p className="text-xs md:text-md lg:text-xl">
+                  {project.excerpt}
+                </p>
               </div>
               <div className="flex flex-wrap p-2 my-3 bg-gray-700 rounded-md">
                 {project.technologies.map((tech, index) => (
-                  <p key={index} className={`${tech?.color} text-xs mx-2`}>
+                  <p
+                    key={index}
+                    className={`${tech?.color} text-xs mx-2 lg:text-md`}
+                  >
                     {tech?.name}
                   </p>
                 ))}

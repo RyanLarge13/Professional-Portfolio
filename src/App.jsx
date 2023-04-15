@@ -9,15 +9,15 @@ import Contact from "./components/Contact.jsx";
 
 const App = () => {
   return (
-    <main className="text-white">
+    <main className="text-white lg:px-10">
       <Header />
       <Hero />
       <Services />
       <Projects />
       <Tech />
       <TimeLine />
-    <Testimonials />
-    <Contact /> 
+      <Testimonials />
+      <Contact />
     </main>
   );
 };

@@ -25,7 +25,7 @@ const Header = () => {
         />
         <CgMenuRight
           onClick={() => setNav((prev) => !prev)}
-          className="text-2xl cursor-pointer hover:text-red-400 duration-200"
+          className="text-2xl cursor-pointer"
         />
       </header>
     </>
