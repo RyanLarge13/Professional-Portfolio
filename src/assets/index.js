@@ -34,10 +34,14 @@ import SCSS from "./sass-1.svg";
 import Tailwind from "./tailwind-css-2.svg";
 import TS from "./typescript.svg";
 import VSCode from "./visual-studio-code-1.svg";
+import GitHub from "./github.svg";
+import AWS from "./aws.svg";
+import Heroku from "./heroku.svg";
+import Vercel from "./vercel.svg";
 
 export {
   React,
-  ReactNative, 
+  ReactNative,
   JS,
   Python,
   CPlusPlus,
@@ -72,4 +76,8 @@ export {
   Tailwind,
   TS,
   VSCode,
+  GitHub, 
+  AWS, 
+  Heroku, 
+  Vercel
 };

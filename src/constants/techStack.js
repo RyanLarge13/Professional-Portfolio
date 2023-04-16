@@ -35,6 +35,10 @@ import {
   Tailwind,
   TS,
   VSCode,
+  GitHub,
+  AWS,
+  Heroku,
+  Vercel,
 } from "../assets/index.js";
 
 export const coreLanguages = [
@@ -209,6 +213,25 @@ export const operatingSystems = [
   },
 ];
 
+export const hosting = [
+  {
+    name: "Github",
+    icon: GitHub,
+  },
+  {
+  	name: "AWS", 
+  	icon: AWS
+  }, 
+  {
+  	name: "Heroku", 
+  	icon: Heroku
+  }, 
+  {
+  	name: "Vercel", 
+  	icon: Vercel
+  }
+];
+
 export const buttons = [
   {
     name: "Core Languages",
@@ -216,30 +239,34 @@ export const buttons = [
   },
   {
     name: "Frameworks",
-    stack: frameworks
+    stack: frameworks,
   },
   {
     name: "Libraries & Auth",
-    stack: librariesAndAuth
+    stack: librariesAndAuth,
   },
   {
     name: "Database",
-    stack: database
+    stack: database,
   },
   {
     name: "Styles & Markup",
-    stack: stylesAndMarkup
+    stack: stylesAndMarkup,
   },
   {
     name: "Design",
-    stack: design
+    stack: design,
   },
   {
     name: "Dev Tools",
-    stack: devTools
+    stack: devTools,
   },
   {
     name: "Operating Systems",
-    stack: operatingSystems
+    stack: operatingSystems,
   },
+  {
+  	name: "Hosting Providers", 
+  	stack: hosting
+  }
 ];

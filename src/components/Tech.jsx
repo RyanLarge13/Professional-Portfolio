@@ -11,6 +11,7 @@ import {
   design,
   devTools,
   operatingSystems,
+  hosting,
   buttons,
 } from "../constants/techStack.js";
 import Tilt from "react-parallax-tilt";
