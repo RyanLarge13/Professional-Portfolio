@@ -59,14 +59,14 @@ const Tech = () => {
           </button>
         ))}
       </div>
-      <div className="flex flex-wrap justify-center items-start my-5 min-h-[300px] bg-gray-700 rounded-md">
+      <div className="p-5 flex flex-wrap justify-center items-start my-5 min-h-[300px] bg-gray-700 rounded-md">
         {stack &&
           stack.map((tech, index) => (
-            <Tilt key={index}>
+            <Tilt key={index} className="text-center">
               <motion.div
                 initial={{ opacity: 0, x: -200 }}
                 animate={{ opacity: 1, x: 0 }}
-                className="m-5 flex flex-col justify-center items-center  rounded-full bg-white text-black p-2 shadow-md"
+                className="m-5 mx-10 flex flex-col justify-center items-center rounded-full bg-white text-black p-2 shadow-md"
               >
                 <img
                   src={tech?.icon}
@@ -74,6 +74,13 @@ const Tech = () => {
                   className="w-10 h-10 rounded-full lg:w-20 lg:h-20"
                 />
               </motion.div>
+              <motion.p
+                initial={{ opacity: 0, x: 200 }}
+                animate={{ opacity: 1, x: 0 }}
+                className="text-xs"
+              >
+                {tech.name}
+              </motion.p>
             </Tilt>
           ))}
       </div>
