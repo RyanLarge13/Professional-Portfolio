@@ -40,6 +40,7 @@ import {
   Heroku,
   Vercel,
   Inkscape,
+  Vue,
 } from "../assets/index.js";
 
 export const coreLanguages = [
@@ -78,6 +79,10 @@ export const frameworks = [
     name: "Angular",
     icon: Angular,
   },
+  {
+  	name: "Vue", 
+  	icon: Vue
+  }
 ];
 
 export const librariesAndAuth = [
@@ -175,9 +180,9 @@ export const design = [
     icon: PhotoShop,
   },
   {
-  	name: "Inkscape", 
-  	icon: Inkscape
-  }
+    name: "Inkscape",
+    icon: Inkscape,
+  },
 ];
 
 export const devTools = [

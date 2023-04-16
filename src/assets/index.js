@@ -39,6 +39,7 @@ import AWS from "./aws.svg";
 import Heroku from "./heroku.svg";
 import Vercel from "./vercel.svg";
 import Inkscape from "./Inkscape.svg";
+import Vue from "./vue.svg";
 
 export {
   React,
@@ -81,5 +82,6 @@ export {
   AWS,
   Heroku,
   Vercel,
-  Inkscape
+  Inkscape,
+  Vue
 };
