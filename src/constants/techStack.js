@@ -39,6 +39,7 @@ import {
   AWS,
   Heroku,
   Vercel,
+  Inkscape,
 } from "../assets/index.js";
 
 export const coreLanguages = [
@@ -173,6 +174,10 @@ export const design = [
     name: "Adobe Photoshoo",
     icon: PhotoShop,
   },
+  {
+  	name: "Inkscape", 
+  	icon: Inkscape
+  }
 ];
 
 export const devTools = [
@@ -219,17 +224,17 @@ export const hosting = [
     icon: GitHub,
   },
   {
-  	name: "AWS", 
-  	icon: AWS
-  }, 
+    name: "AWS",
+    icon: AWS,
+  },
   {
-  	name: "Heroku", 
-  	icon: Heroku
-  }, 
+    name: "Heroku",
+    icon: Heroku,
+  },
   {
-  	name: "Vercel", 
-  	icon: Vercel
-  }
+    name: "Vercel",
+    icon: Vercel,
+  },
 ];
 
 export const buttons = [
@@ -266,7 +271,7 @@ export const buttons = [
     stack: operatingSystems,
   },
   {
-  	name: "Hosting Providers", 
-  	stack: hosting
-  }
+    name: "Hosting Providers",
+    stack: hosting,
+  },
 ];

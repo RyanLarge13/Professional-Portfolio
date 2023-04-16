@@ -38,6 +38,7 @@ import GitHub from "./github.svg";
 import AWS from "./aws.svg";
 import Heroku from "./heroku.svg";
 import Vercel from "./vercel.svg";
+import Inkscape from "./Inkscape.svg";
 
 export {
   React,
@@ -76,8 +77,9 @@ export {
   Tailwind,
   TS,
   VSCode,
-  GitHub, 
-  AWS, 
-  Heroku, 
-  Vercel
+  GitHub,
+  AWS,
+  Heroku,
+  Vercel,
+  Inkscape
 };
