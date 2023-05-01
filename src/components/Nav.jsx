@@ -6,13 +6,13 @@ import navLinks from "../constants/navLinks";
 const Nav = ({ open, setOpen }) => {
   return (
     <motion.nav
-      initial={{ y: 1000 }}
+      initial={{ y: "100%" }}
       animate={
         open
           ? {
               y: 0,
             }
-          : { y: 1000 }
+          : { y: "100%" }
       }
       className={`${components.nav}`}
     >
