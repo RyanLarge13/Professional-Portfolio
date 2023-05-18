@@ -2,7 +2,7 @@ export const elements = {
   strongGradient:
     "bg-gradient-to-r from-indigo-500 to-blue-500 bg-clip-text text-transparent",
   socialLink: "p-3 ml-0 mx-4 outline outline-blue-500 rounded-full",
-  input: "rounded-md my-3 p-2 w-full outline-0",
+  input: "rounded-md my-3 p-2 w-full outline-0 text-black",
 };
 
 export const components = {
