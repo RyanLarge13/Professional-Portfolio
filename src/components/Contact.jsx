@@ -1,14 +1,25 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { elements } from "../styles/styles.js";
 import { BsFillArrowUpSquareFill } from "react-icons/bs";
 import emailjs from "@emailjs/browser";
+import Notification from "./Notification.jsx";
 
 const Contact = () => {
   const form = useRef();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [show, setShow] = useState(false);
+  const [alertMessage, setAlertMessage] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
+    if (!name || !email || !message) {
+      return stopMessage();
+    }
+    setShow(true);
+    setAlertMessage("Sending. . .");
 
     emailjs
       .sendForm(
@@ -20,7 +31,13 @@ const Contact = () => {
       .then(
         (res) => {
           form.current.reset();
-          alert("Thank you! I will get in touch shortly");
+          setAlertMessage(
+            `Thank you for gettting in touch ${name}! I will get back with you shortly.`
+          );
+          setTimeout(() => {
+            setShow(false);
+            setAlertMessage("");
+          }, 3000);
         },
         (err) => {
           console.log(err.text);
@@ -28,8 +45,18 @@ const Contact = () => {
       );
   };
 
+  const stopMessage = () => {
+    setAlertMessage("Please fill out all form data");
+    setShow(true);
+    setTimeout(() => {
+      setShow(false);
+      setAlertMessage("");
+    }, 3000);
+  };
+
   return (
     <section id="contact" className="p-5">
+      <Notification message={alertMessage} show={show} setShow={setShow} />
       <p className="text-pink-500">Connect</p>
       <motion.h2
         initial={{ opacity: 0, x: -100 }}
@@ -57,6 +84,7 @@ const Contact = () => {
       >
         <label className="hidden">Name</label>
         <input
+          onChange={(e) => setName(e.target.value)}
           type="text"
           name="user_name"
           placeholder="Name"
@@ -64,6 +92,7 @@ const Contact = () => {
         />
         <label className="hidden">Email</label>
         <input
+          onChange={(e) => setEmail(e.target.value)}
           type="email"
           name="user_email"
           placeholder="Email"
@@ -71,6 +100,7 @@ const Contact = () => {
         />
         <label className="hidden">Message</label>
         <textarea
+          onChange={(e) => setMessage(e.target.value)}
           name="message"
           placeholder="Message"
           className={`${elements.input} text-black min-h-[200px] text-xs`}
