@@ -3,6 +3,7 @@ import WAReact from "../assets/WA-React.jpg";
 import Calendar from "../assets/Calendar.jpg";
 import SoapWorks from "../assets/soapWorks.jpg";
 import MyLists from "../assets/My-Lists.jpg";
+import TroyLarge from "../assets/Troy-Large.jpg";
 
 export default [
   {
@@ -49,6 +50,10 @@ export default [
         name: "Tailwind",
         color: "text-blue-400",
       },
+      {
+      	name: "Google Auth", 
+      	color: "text-amber-500"
+      }
     ],
   },
   {
@@ -69,7 +74,7 @@ export default [
         color: "text-green-300",
       },
       {
-        name: "PostgreSQL",
+        name: "Prisma",
         color: "text-blue-300",
       },
       {
@@ -124,6 +129,29 @@ export default [
       },
       {
         name: "Expo",
+        color: "text-white",
+      },
+    ],
+  },
+  {
+    title: "Troy Large",
+    img: TroyLarge,
+    website: "https://troy-large.vercel.app/",
+    code: "https://github.com/RyanLarge13/Troy-Large/",
+    forkCode: "https://github.com/RyanLarge13/Tory-Large/fork",
+    excerpt:
+      "Nextjs 13.4 taken to the highest level to build an Ecommerce website with a sleek, modern & user friendly interface to help a growing artist sell his treasures. Take a quick look and buy some beautiful pastel part!",
+    technologies: [
+      {
+        name: "Nextjs 13",
+        color: "text-violet-300",
+      },
+      {
+        name: "MongoDB",
+        color: "text-green-300",
+      },
+      {
+        name: "Stripe",
         color: "text-white",
       },
     ],
