@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 const Notification = ({ message, show, setShow }) => {
   return (
     <motion.div
+    initial={{top: "-15%"}} 
       animate={
         show
           ? {

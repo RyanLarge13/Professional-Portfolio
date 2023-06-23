@@ -55,7 +55,7 @@ const Hero = () => {
       >
         <motion.img
           initial={{ y: 200, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1, transition: { delay: 0.5 } }}
+          animate={{ y: 0, opacity: 1 }}
           src={Dev}
           alt="dev"
           className="rounded-md shadow-md my-20"
