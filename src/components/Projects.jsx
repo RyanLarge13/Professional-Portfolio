@@ -58,7 +58,7 @@ const Projects = () => {
               <img
                 src={project.img}
                 alt="project"
-                className="w-full rounded-md shadow-lg h-[200px] object-cover object-center md:h-[300px] lg:h-[400px]"
+                className="w-full rounded-md shadow-2xl h-[200px] object-cover object-center md:h-[300px] lg:h-[400px]"
               />
               <div className="flex justify-start items-center py-2 my-5 w-full text-2xl">
                 <a href={project.code} className="mr-5">

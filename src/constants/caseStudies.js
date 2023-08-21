@@ -4,6 +4,7 @@ import Calendar from "../assets/Calendar.jpg";
 import SoapWorks from "../assets/soapWorks.jpg";
 import MyLists from "../assets/My-Lists.jpg";
 import TroyLarge from "../assets/Troy-Large.jpg";
+import DC from "../assets/dc.jpg"
 
 export default [
   {
@@ -154,6 +155,33 @@ export default [
         name: "Stripe",
         color: "text-white",
       },
+    ],
+  },
+    {
+    title: "Dev Commerce",
+    img: DC,
+    website: "https://www.devcommerce.app/",
+    code: "https://github.com/RyanLarge13/DC/",
+    forkCode: "https://github.com/RyanLarge13/DC/fork/",
+    excerpt:
+      "Professional tech driven E-commerce business 100% online, ready to sell my services and experience to the world and bring others dreams to life",
+    technologies: [
+      {
+        name: "Next13",
+        color: "text-violet-300",
+      },
+      {
+        name: "Tailwind",
+        color: "text-blue-400",
+      },
+      {
+        name: "MongoDB",
+        color: "text-green-300",
+      },
+      {
+      	name: "Stripe", 
+      	color: "text-white"
+      }
     ],
   },
 ];

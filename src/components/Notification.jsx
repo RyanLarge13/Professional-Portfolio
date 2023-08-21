@@ -3,11 +3,12 @@ import { motion } from "framer-motion";
 const Notification = ({ message, show, setShow }) => {
   return (
     <motion.div
-    initial={{top: "-15%"}} 
+    initial={{top: "-15%", opacity: 0}} 
       animate={
         show
           ? {
               top: "15%",
+              opacity: 1,
               transition: {
                 duration: 1.5,
                 type: "spring",

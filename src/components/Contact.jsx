@@ -20,7 +20,6 @@ const Contact = () => {
     }
     setShow(true);
     setAlertMessage("Sending. . .");
-
     emailjs
       .sendForm(
         "service_1et9c8o",
