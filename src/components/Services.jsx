@@ -47,6 +47,11 @@ const Services = () => {
           </motion.div>
         ))}
       </div>
+      <a href="https://devcommerce.app/">
+        <button className="p-3 mt-5 rounded-md bg-gradient-to-r from-blue-500 to-violet-500 text-center md:w-[50%] md:mx-auto hover:to-blue-500 from-violet-500">
+          Build Your Tech Dream
+        </button>
+      </a>
     </section>
   );
 };

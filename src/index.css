@@ -8,10 +8,14 @@
 }
 
 html {
-	scroll-behavior: smooth;
-	scroll-padding: 100px;
+  scroll-behavior: smooth;
+  scroll-padding: 100px;
 }
 
 body {
- background-color: #222;
+  background-color: #222;
+}
+
+.active {
+  color: #ef4444;
 }

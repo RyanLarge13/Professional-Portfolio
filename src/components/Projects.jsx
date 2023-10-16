@@ -30,7 +30,7 @@ const Projects = () => {
           something new, fun & beneficial
         </motion.p>
       </div>
-      <div className="overflow-hidden md:grid md:grid-cols-2 md:gap-20 md:p-10">
+      <div className="overflow-hidden md:grid md:grid-cols-2 md:gap-20 md:10">
         {projects.map((project, index) => (
           <Tilt
             key={index}
@@ -87,6 +87,11 @@ const Projects = () => {
           </Tilt>
         ))}
       </div>
+      <a href="https://github.com/RyanLarge13/">
+        <button className="p-3 mt-5 rounded-md bg-gradient-to-r from-blue-500 to-violet-500 text-center md:w-[50%] md:mx-auto hover:to-blue-500 from-violet-500">
+          View More Projects
+        </button>
+      </a>
     </section>
   );
 };
