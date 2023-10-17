@@ -1,12 +1,16 @@
 import { motion } from "framer-motion";
 import { animations } from "../styles/variants.js";
 import { elements } from "../styles/styles.js";
-import { BsFillArrowUpRightSquareFill } from "react-icons/bs";
+import { BsFillArrowUpRightSquareFill, BsFillShareFill } from "react-icons/bs";
 import Dev from "../assets/dev.jpg";
 import Tilt from "react-parallax-tilt";
 import socialLinks from "../constants/socialLinks.js";
 
 const Hero = () => {
+  const urlToShare = "https://www.example.com";
+  const encodedUrl = encodeURIComponent(urlToShare);
+  const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`;
+
   return (
     <section className="px-5 pt-10 mt-20" id="home">
       <div className="w-full">
@@ -28,25 +32,40 @@ const Hero = () => {
           </a>
         </div>
         <hr />
-        <motion.div
-          variants={animations.stagger}
-          initial="hidden"
-          animate="show"
-          className="flex justify-start items-center text-xl text-blue-500 my-5"
-        >
-          {socialLinks.map((link, index) => (
-            <motion.div
-              key={index}
-              whileHover={{ scale: 1.05 }}
-              variants={animations.socialIcons}
-              className={`${elements.socialLink}`}
+        <div className="flex justify-between items-center">
+          <motion.div
+            variants={animations.stagger}
+            initial="hidden"
+            animate="show"
+            className="flex justify-start items-center text-xl text-blue-500 my-5"
+          >
+            {socialLinks.map((link, index) => (
+              <motion.div
+                key={index}
+                whileHover={{ scale: 1.05 }}
+                variants={animations.socialIcons}
+                className={`${elements.socialLink}`}
+              >
+                <a href={link.href} target="_blank" rel="noreferrer">
+                  {<link.icon />}
+                </a>
+              </motion.div>
+            ))}
+          </motion.div>
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            variants={animations.socialIcons}
+            className={`${elements.socialLink}`}
+          >
+            <a
+              href={facebookShareUrl}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <a href={link.href} target="_blank" rel="noreferrer">
-                {<link.icon />}
-              </a>
-            </motion.div>
-          ))}
-        </motion.div>
+              <BsFillShareFill className="text-blue-500" />
+            </a>
+          </motion.div>
+        </div>
       </div>
       <Tilt
         tiltMaxAngleX={7}
