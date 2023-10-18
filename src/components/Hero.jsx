@@ -7,7 +7,7 @@ import Tilt from "react-parallax-tilt";
 import socialLinks from "../constants/socialLinks.js";
 
 const Hero = () => {
-  const urlToShare = "https://www.example.com";
+  const urlToShare = "https://www.ryanlarge.com";
   const encodedUrl = encodeURIComponent(urlToShare);
   const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`;
 
