@@ -30,21 +30,21 @@ const Projects = () => {
           something new, fun & beneficial
         </motion.p>
       </div>
-      <div className="overflow-hidden md:grid md:grid-cols-2 md:gap-20 md:10">
+      <div className="overflow-hidden md:grid md:grid-cols-2 md:gap-5 md:justify-center md:align-center">
         {projects.map((project, index) => (
           <Tilt
             key={index}
-            tiltMaxAngleX={7}
-            tiltMaxAngleY={7}
-            className="w-full flex flex-col justify-center items-center"
+            tiltMaxAngleX={1}
+            tiltMaxAngleY={1}
+            className="w-full flex flex-col justify-center items-center h-full"
           >
             <motion.div
-              initial={{ scale: 0.75 }}
+              initial={{ scale: 0.9 }}
               whileInView={{
                 scale: 1,
                 transition: { type: "spring", stiffness: 400 },
               }}
-              className="p-5 my-5 bg-gradient-to-r from-indigo-400 to-blue-500 rounded-md relative"
+              className="p-5 my-5 md:my-0 bg-gradient-to-r from-indigo-400 to-blue-500 rounded-md relative h-full"
             >
               <motion.a
                 whileHover={{ scale: 1.1 }}

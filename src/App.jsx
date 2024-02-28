@@ -9,7 +9,7 @@ import Contact from "./components/Contact.jsx";
 
 const App = () => {
   return (
-    <main className="text-white lg:px-10">
+    <main className="text-white md:px-40 lg:px-60">
       <Header />
       <Hero />
       <Services />

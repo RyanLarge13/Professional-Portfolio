@@ -49,7 +49,7 @@ const Tech = () => {
                 setStack(btn.stack);
               }, 10);
             }}
-            className={`px-5 py-2 m-2 rounded-md shadow-md bg-gradient-to-r h-full lg:my-5 ${
+            className={`py-3 rounded-md shadow-md bg-gradient-to-r ${
               btn.stack === stack
                 ? "from-red-400 to-pink-500"
                 : "from-indigo-400 to-blue-500 hover:from-blue-500 hover:to-indigo-400"
@@ -71,7 +71,7 @@ const Tech = () => {
                 <img
                   src={tech?.icon}
                   alt={tech?.name}
-                  className="w-10 h-10 rounded-full lg:w-20 lg:h-20"
+                  className="w-10 h-10 rounded-full"
                 />
               </motion.div>
               <motion.p
