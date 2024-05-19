@@ -4,28 +4,32 @@ import Calendar from "../assets/Calendar.jpg";
 import SoapWorks from "../assets/soapWorks.jpg";
 import MyLists from "../assets/My-Lists.jpg";
 import TroyLarge from "../assets/Troy-Large.jpg";
-import DC from "../assets/dc.jpg"
+import DC from "../assets/dc.jpg";
+import Notes from "../assets/notes.png";
+import RyansBlog from "../assets/ryansblog.png";
+import Jovial from "../assets/jovial.png";
+import SimpleDraw from "../assets/simpledraw.png";
 
 export default [
   {
-    title: "Weather App",
-    img: WAReact,
-    website: "https://weather-app-react-lac.vercel.app/",
-    code: "https://github.com/RyanLarge13/Weather-App-React/",
-    forkCode: "https://github.com/RyanLarge13/Weather-App-React/fork/",
+    title: "Jovial",
+    img: Jovial,
+    website: "https://jovial.vercel.app/",
+    code: "https://github.com/RyanLarge13/Jovial/",
+    forkCode: "https://github.com/RyanLarge13/Jovial/fork/",
     excerpt:
-      "A website built to serve people weather information in their area. This application provides the current, hourly & daily weather nearest to you",
+      "Social Media apps are always going to be hot. It is time to create the new best one",
     technologies: [
       {
-        name: "React",
+        name: "Nextjs",
         color: "text-purple-500",
       },
       {
-        name: "SCSS",
+        name: "Tailwind",
         color: "text-pink-300",
       },
       {
-        name: "Axios",
+        name: "Server Components",
         color: "text-emerald-400",
       },
     ],
@@ -52,9 +56,9 @@ export default [
         color: "text-blue-400",
       },
       {
-      	name: "Google Auth", 
-      	color: "text-amber-500"
-      }
+        name: "Google Auth",
+        color: "text-amber-500",
+      },
     ],
   },
   {
@@ -112,25 +116,21 @@ export default [
     ],
   },
   {
-    title: "My Lists",
-    img: MyLists,
-    website: "https://expo.dev/artifacts/eas/tQw6FUxboYj9gboSptKp7f.apk",
-    code: "https://github.com/RyanLarge13/My-Lists-Android/",
-    forkCode: "https://github.com/RyanLarge13/My-Lists-Android/fork",
+    title: "Simple Draw",
+    img: SimpleDraw,
+    website: "https://ryanlarge13.github.io/Simple-Draw/",
+    code: "https://github.com/RyanLarge13/Simple-Draw/",
+    forkCode: "https://github.com/RyanLarge13/Simple-Draw/fork",
     excerpt:
-      "React Native & MongoDB join together again for an amazing task management application! Make a lists of lists, customize them, sync your data offline and online and stay organized!! The top right arrow will download the apk test version of the mobile app.",
+      "JavaScript web app built to draw and create cool objects on a canvas! Goof around and have fun",
     technologies: [
       {
-        name: "React Native",
-        color: "text-blue-300",
+        name: "JavaScript",
+        color: "text-yellow-300",
       },
       {
-        name: "MongoDB",
-        color: "text-green-300",
-      },
-      {
-        name: "Expo",
-        color: "text-white",
+        name: "HTML",
+        color: "text-red-300",
       },
     ],
   },
@@ -157,7 +157,7 @@ export default [
       },
     ],
   },
-    {
+  {
     title: "Dev Commerce",
     img: DC,
     website: "https://www.devcommerce.app/",
@@ -179,9 +179,59 @@ export default [
         color: "text-green-300",
       },
       {
-      	name: "Stripe", 
-      	color: "text-white"
-      }
+        name: "Stripe",
+        color: "text-white",
+      },
+    ],
+  },
+  {
+    title: "Electron Notes",
+    img: Notes,
+    website: "https://snapcraft.io/web-notes",
+    code: "https://github.com/RyanLarge13/Electron-Notes/",
+    forkCode: "https://github.com/RyanLarge13/Electron-Notes/fork/",
+    excerpt:
+      "Native desktop notes taking application dedicated to creating a world of organization and structure",
+    technologies: [
+      {
+        name: "TypeScript",
+        color: "text-sky-500",
+      },
+      {
+        name: "Tailwind",
+        color: "text-blue-300",
+      },
+      {
+        name: "Electron",
+        color: "text-purple-400",
+      },
+      {
+        name: "IndexDB",
+        color: "text-emerald-400",
+      },
+      {
+        name: "Node.js",
+        color: "text-green-400",
+      },
+    ],
+  },
+  {
+    title: "Ryan's Blog",
+    img: RyansBlog,
+    website: "https://ryans-blog-roan.vercel.app/",
+    code: "https://github.com/RyanLarge13/Ryans-Blog/",
+    forkCode: "https://github.com/RyanLarge13/Ryans-Blog/fork/",
+    excerpt:
+      "Personal blog where I talk about everything related to engineering applications",
+    technologies: [
+      {
+        name: "Nextjs",
+        color: "text-sky-500",
+      },
+      {
+        name: "Tailwind",
+        color: "text-blue-300",
+      },
     ],
   },
 ];

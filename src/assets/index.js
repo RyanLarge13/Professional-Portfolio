@@ -40,6 +40,7 @@ import Heroku from "./heroku.svg";
 import Vercel from "./vercel.svg";
 import Inkscape from "./Inkscape.svg";
 import Vue from "./vue.svg";
+import Notes from "./notes.png";
 
 export {
   React,
@@ -83,5 +84,6 @@ export {
   Heroku,
   Vercel,
   Inkscape,
-  Vue
+  Vue,
+  Notes,
 };

@@ -30,61 +30,50 @@ const Projects = () => {
           something new, fun & beneficial
         </motion.p>
       </div>
-      <div className="overflow-hidden md:grid md:grid-cols-2 md:gap-5 md:justify-center md:align-center">
+      <div className="overflow-hidden md:grid md:grid-cols-3 md:gap-5 md:justify-center md:align-center">
         {projects.map((project, index) => (
-          <Tilt
+          <motion.div
             key={index}
-            tiltMaxAngleX={1}
-            tiltMaxAngleY={1}
-            className="w-full flex flex-col justify-center items-center h-full"
+            initial={{ scale: 0.9 }}
+            whileInView={{
+              scale: 1,
+              transition: { type: "spring", stiffness: 400 },
+            }}
+            className="p-5 my-5 w-full flex flex-col justify-center items-center md:my-0 bg-gradient-to-r from-indigo-400 to-blue-500 rounded-md relative h-full"
           >
-            <motion.div
-              initial={{ scale: 0.9 }}
-              whileInView={{
-                scale: 1,
-                transition: { type: "spring", stiffness: 400 },
-              }}
-              className="p-5 my-5 md:my-0 bg-gradient-to-r from-indigo-400 to-blue-500 rounded-md relative h-full"
-            >
-              <motion.a
-                whileHover={{ scale: 1.1 }}
-                href={project.website}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <BsBoxArrowInUpRight className="absolute top-2 right-2 text-xl" />
-              </motion.a>
-              <p className="text-2xl my-3 lg:text-3xl">{project.title}</p>
-              <img
-                src={project.img}
-                alt="project"
-                className="w-full rounded-md shadow-2xl h-[200px] object-cover object-center md:h-[300px] lg:h-[400px]"
-              />
-              <div className="flex justify-start items-center py-2 my-5 w-full text-2xl">
-                <a href={project.code} className="mr-5">
-                  <BiCodeAlt />
-                </a>
-                <a href={project.forkCode}>
-                  <FaCodeBranch />
-                </a>
-              </div>
+            <a href={project.website} target="_blank" rel="noreferrer">
+              <BsBoxArrowInUpRight className="absolute top-2 right-2 text-xl hover:text-2xl duration-200" />
+            </a>
+            <p className="text-2xl my-3 lg:text-3xl">{project.title}</p>
+            <img
+              src={project.img}
+              alt="project"
+              className="w-full rounded-md shadow-2xl h-[100px] object-cover object-center md:h-[100px] lg:h-[100px]"
+            />
+            <div className="flex justify-start items-center py-2 my-5 w-full text-2xl">
+              <a href={project.code} className="mr-5">
+                <BiCodeAlt />
+              </a>
+              <a href={project.forkCode}>
+                <FaCodeBranch />
+              </a>
+            </div>
+            <div className="flex flex-col flex-grow justify-between items-start">
               <div>
-                <p className="text-xs md:text-md lg:text-xl">
-                  {project.excerpt}
-                </p>
+                <p className="text-[14px]">{project.excerpt}</p>
               </div>
-              <div className="flex flex-wrap p-2 my-3 bg-gray-700 rounded-md">
+              <div className="flex w-full flex-wrap gap-3 p-2 my-3 bg-gray-700 rounded-md">
                 {project.technologies.map((tech, index) => (
                   <p
                     key={index}
-                    className={`${tech?.color} text-xs mx-2 lg:text-md`}
+                    className={`${tech?.color} text-xs lg:text-md`}
                   >
                     {tech?.name}
                   </p>
                 ))}
               </div>
-            </motion.div>
-          </Tilt>
+            </div>
+          </motion.div>
         ))}
       </div>
       <a href="https://github.com/RyanLarge13/">
