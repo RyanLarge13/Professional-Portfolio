@@ -67,19 +67,14 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
-      <Tilt
-        tiltMaxAngleX={7}
-        tiltMaxAngleY={7}
-        className="lg:w-[50%] lg:mx-auto"
-      >
-        <motion.img
-          initial={{ y: 200, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          src={Dev}
-          alt="dev"
-          className="rounded-md shadow-md my-20"
-        />
-      </Tilt>
+      <motion.img
+        loading="lazy"
+        initial={{ y: 50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        src={Dev}
+        alt="dev"
+        className="rounded-md shadow-md my-20"
+      />
     </section>
   );
 };

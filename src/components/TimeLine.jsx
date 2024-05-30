@@ -208,7 +208,7 @@ const TimeLine = () => {
         </VerticalTimelineElement>
       </VerticalTimeline>
       <a href="/ryanLargeResume.pdf" download="RyanLarge_Resume">
-        <div className="p-2 mt-5 rounded-md bg-gradient-to-r from-blue-500 to-violet-500 text-center md:w-[50%] md:mx-auto hover:to-blue-500 from-violet-500">
+        <div className="p-2 mt-5 rounded-md bg-gradient-to-r to-violet-500 text-center md:w-[50%] md:mx-auto hover:to-blue-500 from-violet-500">
           <p>Download My Full Professional Resume</p>
           <AiOutlineCloudDownload className="text-3xl inline ml-3" />
         </div>
