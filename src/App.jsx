@@ -6,6 +6,7 @@ import Tech from "./components/Tech";
 import TimeLine from "./components/TimeLine";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact.jsx";
+import Footer from "./components/Footer.jsx";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <TimeLine />
       <Testimonials />
       <Contact />
+      <Footer />
     </main>
   );
 };

@@ -10,7 +10,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 const TimeLine = () => {
   return (
-    <section id="timeline" className="p-5 overflow-x-hidden">
+    <section id="timeline" className="p-5 overflow-x-hidden min-h-screen py-20">
       <p className="text-pink-500">Experience</p>
       <motion.h2
         initial={{ opacity: 0, x: -100 }}
@@ -26,9 +26,8 @@ const TimeLine = () => {
         whileInView={{ opacity: 1, transition: { delay: 0.25 } }}
         className="text-sm my-5 md:text-xl md:w-[50%]"
       >
-        You may be satisfied by hiring a developer with no experience, or it
-        might be required for you to hire a developer with tons of experience.
-        Here is mine...
+        Professional Experience showcasing my journey of impactful contributions
+        and expertise across diverse projects and roles
       </motion.p>
       <VerticalTimeline>
         <VerticalTimelineElement
@@ -42,13 +41,13 @@ const TimeLine = () => {
             whileInView={{ opacity: 1, transition: { duration: 1 } }}
           >
             <h2 className="text-xs">Software Developer</h2>
-            <h3 className="text-black text-sm">Freelance</h3>
+            <h3 className="text-black text-sm mt-2">Freelance</h3>
             <p className="text-black text-xs">
               Developing cross platform fullstack applications to help the
               community and entrepreneurs succeed and produce software to push
               industries into the future
             </p>
-            <ul className="text-black text-xs list-disc ml-5">
+            <ul className="text-black text-xs list-disc ml-5 mt-3">
               <li>
                 Lead projects for clients that satisfy their needs by
                 implementing best practices in both production & development
@@ -78,13 +77,13 @@ const TimeLine = () => {
             whileInView={{ opacity: 1, transition: { duration: 1 } }}
           >
             <h2 className="text-xs">My Flix</h2>
-            <h3 className="text-black text-sm">Career Foundry</h3>
+            <h3 className="text-black text-sm mt-2">Career Foundry</h3>
             <p className="text-black text-xs">
               Handling fullstack development for an application to serve movie
               data to the public via API and MongoDB and client side rendering
               React interface for a beautiful look, feel & functionality
             </p>
-            <ul className="text-black text-xs list-disc ml-5">
+            <ul className="text-black text-xs list-disc ml-5 mt-3">
               <li>
                 Creating developing and deploying of a fully functional Node.js
                 API and Express for routing
@@ -111,13 +110,13 @@ const TimeLine = () => {
             whileInView={{ opacity: 1, transition: { duration: 1 } }}
           >
             <h2 className="text-xs">Herreshoff Burner</h2>
-            <h3 className="text-black text-sm">Premier Magnesia</h3>
+            <h3 className="text-black text-sm mt-2">Premier Magnesia</h3>
             <p className="text-black text-xs">
               Operating & maintaining product quality by controlling a
               Herreshoff furnace, mill & all related equipment involved in
               grinding and cooking raw Magnesite
             </p>
-            <ul className="text-black text-xs list-disc ml-5">
+            <ul className="text-black text-xs list-disc ml-5 mt-3">
               <li>
                 Improve production quality by identifying faulty or
                 deteriorating equipment prior to a potentially disastrous
@@ -146,12 +145,12 @@ const TimeLine = () => {
             whileInView={{ opacity: 1, transition: { duration: 1 } }}
           >
             <h2 className="text-xs">Soap Works</h2>
-            <h3 className="text-black text-sm">Freelance</h3>
+            <h3 className="text-black text-sm mt-2">Freelance</h3>
             <p className="text-black text-xs">
               Building a fullstack EJS, Node.js, MongoDB & Express Ecommerce
               website for an all natural homemade hygenics business
             </p>
-            <ul className="text-black text-xs list-disc ml-5">
+            <ul className="text-black text-xs list-disc ml-5 mt-3">
               <li>
                 Handling server side rendering components with EJS templating
                 engine an a scalable and efficient manner
@@ -179,13 +178,13 @@ const TimeLine = () => {
             whileInView={{ opacity: 1, transition: { duration: 1 } }}
           >
             <h2 className="text-xs">Lead Cook</h2>
-            <h3 className="text-black text-sm">Mission Pines</h3>
+            <h3 className="text-black text-sm mt-2">Mission Pines</h3>
             <p className="text-black text-xs">
               Taking great care in providing over 140 residents planned meals
               both for breakfast and lunch, meeting all dietary standards and
               best practices
             </p>
-            <ul className="text-black text-xs list-disc ml-5">
+            <ul className="text-black text-xs list-disc ml-5 mt-3">
               <li>
                 Controlled the quality of food that each patient received based
                 on their physical health and dietary conditions all while
@@ -208,7 +207,7 @@ const TimeLine = () => {
         </VerticalTimelineElement>
       </VerticalTimeline>
       <a href="/ryanLargeResume.pdf" download="RyanLarge_Resume">
-        <div className="p-2 mt-5 rounded-md bg-gradient-to-r to-violet-500 text-center md:w-[50%] md:mx-auto hover:to-blue-500 from-violet-500">
+        <div className="text-blue-500 hover:text-pink-500 duration-200 text-center mt-10">
           <p>Download My Full Professional Resume</p>
           <AiOutlineCloudDownload className="text-3xl inline ml-3" />
         </div>

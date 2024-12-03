@@ -4,11 +4,13 @@ import { elements } from "../styles/styles.js";
 import { BsBoxArrowInUpRight } from "react-icons/bs";
 import { BiCodeAlt } from "react-icons/bi";
 import { FaCodeBranch } from "react-icons/fa";
-import Tilt from "react-parallax-tilt";
+import { useState } from "react";
 
 const Projects = () => {
+  const [projAmount, setProjAmount] = useState(3);
+
   return (
-    <section className="p-5 mt-10" id="projects">
+    <section className="p-5 min-h-screen py-20" id="projects">
       <div className="mb-5">
         <p className="text-sm mb-2 text-pink-500">Case Studies</p>
         <motion.h2
@@ -31,7 +33,7 @@ const Projects = () => {
         </motion.p>
       </div>
       <div className="overflow-hidden md:grid md:grid-cols-3 md:gap-5 md:justify-center md:align-center">
-        {projects.map((project, index) => (
+        {projects.slice(0, projAmount).map((project, index) => (
           <motion.div
             key={index}
             initial={{ scale: 0.9 }}
@@ -44,11 +46,11 @@ const Projects = () => {
             <a href={project.website} target="_blank" rel="noreferrer">
               <BsBoxArrowInUpRight className="absolute top-2 right-2 text-xl hover:text-2xl duration-200" />
             </a>
-            <p className="text-2xl my-3 lg:text-3xl">{project.title}</p>
+            <p className="text-2xl mt-3 mb-5 lg:text-3xl">{project.title}</p>
             <img
               src={project.img}
               alt="project"
-              className="w-full rounded-md shadow-2xl h-[100px] object-cover object-center md:h-[100px] lg:h-[100px]"
+              className="w-full rounded-md shadow-2xl aspect-square object-cover"
             />
             <div className="flex justify-start items-center py-2 my-5 w-full text-2xl">
               <a href={project.code} className="mr-5">
@@ -76,8 +78,16 @@ const Projects = () => {
           </motion.div>
         ))}
       </div>
+      {projAmount < 9 ? (
+        <button
+          onClick={() => setProjAmount((prev) => prev + 3)}
+          className="text-sm mt-3 mb-5 underline"
+        >
+          Show More...
+        </button>
+      ) : null}
       <a href="https://github.com/RyanLarge13/">
-        <button className="p-3 mt-5 rounded-md bg-gradient-to-r from-blue-500 to-violet-500 text-center md:w-[50%] md:mx-auto hover:to-blue-500 from-violet-500">
+        <button className="text-blue-300 mt-5 block hover:text-pink-500 duration-200">
           View More Projects
         </button>
       </a>

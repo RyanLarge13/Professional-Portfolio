@@ -20,7 +20,7 @@ const Tech = () => {
   const [stack, setStack] = useState(coreLanguages);
 
   return (
-    <section id="tech" className="p-5">
+    <section id="tech" className="p-5 min-h-screen py-20 overflow-x-hidden">
       <p className="text-pink-500">Tech Stack</p>
       <motion.h2
         initial={{ opacity: 0, x: -100 }}
@@ -39,7 +39,7 @@ const Tech = () => {
         & back again to the world of Desktop Applications you will find here the
         veriety and diversity in programming languages I understand
       </motion.p>
-      <div className="mt-5 grid grid-cols-2 justify-center items-center gap-2">
+      <div className="mt-5 grid grid-cols-2 lg:grid-cols-3 justify-center items-center gap-2">
         {buttons.map((btn, index) => (
           <button
             key={index}
@@ -59,7 +59,7 @@ const Tech = () => {
           </button>
         ))}
       </div>
-      <div className="p-5 flex flex-wrap justify-center items-start my-5 min-h-[300px] bg-gray-700 rounded-md">
+      <div className="p-5 flex flex-wrap justify-center items-center mt-20 min-h-[500px] rounded-md">
         {stack &&
           stack.map((tech, index) => (
             <Tilt key={index} className="text-center">

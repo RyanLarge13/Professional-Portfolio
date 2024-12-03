@@ -5,7 +5,7 @@ import { elements } from "../styles/styles.js";
 
 const Services = () => {
   return (
-    <section id="services" className="p-5">
+    <section id="services" className="p-5 min-h-screen py-20">
       <p className="text-pink-500">Services</p>
       <motion.h2
         initial={{ opacity: 0, x: -100 }}
@@ -48,7 +48,7 @@ const Services = () => {
         ))}
       </div>
       <a href="https://devcommerce.app/">
-        <button className="p-3 mt-5 rounded-md bg-gradient-to-r from-blue-500 to-violet-500 text-center md:w-[50%] md:mx-auto hover:to-blue-500 from-violet-500">
+        <button className="text-blue-300 mt-3 hover:text-pink-500 duration-200">
           Build Your Tech Dream
         </button>
       </a>

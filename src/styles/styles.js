@@ -1,8 +1,10 @@
 export const elements = {
   strongGradient:
     "bg-gradient-to-r from-indigo-500 to-blue-500 bg-clip-text text-transparent",
+  strongGradientBg: "bg-gradient-to-r from-indigo-500 to-blue-500",
   socialLink: "p-3 ml-0 mx-4 outline outline-blue-500 rounded-full",
-  input: "rounded-md my-3 p-2 w-full outline-0 text-black",
+  input:
+    "rounded-md my-1 p-2 w-full outline-0 shadow-md bg-slate-900 text-white",
 };
 
 export const components = {
